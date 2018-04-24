@@ -1,0 +1,25 @@
+{
+      "list": [
+        {
+          "betAmount": 300,
+          "betContent": "08",
+          "betCount": 1,
+          "betMode": 0,
+          "chaseCount": 1,
+          "ifChase": 0,
+          "moneyMode": "y",
+          "multiple": 1,
+          "payoff": 0,
+          "playId": 1011108,
+          "remark": "无"
+        }
+      ],
+      "amount": 300,
+      "lotteryId": 10,
+      "operType": 0,
+      "pcode": "2018093",
+      "pdate": 201802,
+      "remark": "无",
+      "source": "h5",
+      "sourceType": "2"
+    }

@@ -1,0 +1,2541 @@
+Tue, 24 Apr 2018 11:48:47 pylog.py[line:44] INFO 【登陆鉴权owner】 | victor 123456
+Tue, 24 Apr 2018 11:48:47 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:48:48 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /uaa/apid/plat/login?grant_type=password&username=victor&password=123456&code=000000 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:48] DEBUG {
+  "data" : {
+    "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjQ2MjgxMjcsInVzZXJfbmFtZSI6IlBMQVRfeHFfZG91YmxlfHZpY3RvciIsImF1dGhvcml0aWVzIjpbIlJPTEVfUExBVEZPUk0iXSwianRpIjoiYjNlZTQxOTYtODRmNy00YWNhLTg2ZmQtYmI1ZDUwZWM3MDY1IiwiY2xpZW50X2lkIjoid2ViX2FwcCIsInNjb3BlIjpbIm9wZW5pZCJdfQ.OJpRH0tAfYLkh36EDvkxAkxNAw5Oq6P9ettkB8P4Xv0j-cNNOyoTladaDE023OjMrd81G0sQvGlG8pTaWhrjgY8MMjMv08L_F1mVkcNxWNEMttjwTh8MH24sbJxMq8m1BUBUS7EHfn6xFWFN6IVSnzn1sFczvh_1fcs-TWqe8ipI9Nyvf60x2moh8-Nnj_fDJLUrPzCeHXpKQar35_vOlsvzSl5RC9e-g-tBg_dPyTc1Z5j9Ml9AKBFvDW_dJml7aC81YqdUUZ2eDduyWbaQyJmtDCUMuEI0HUcPyRdTEFZEkQOeUaXmrffQ5bPIv_aDRn-tuEhgA-9zp1iShDGLpw",
+    "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJQTEFUX3hxX2RvdWJsZXx2aWN0b3IiLCJzY29wZSI6WyJvcGVuaWQiXSwiYXRpIjoiYjNlZTQxOTYtODRmNy00YWNhLTg2ZmQtYmI1ZDUwZWM3MDY1IiwiZXhwIjoxNTI3MTMzNzI3LCJhdXRob3JpdGllcyI6WyJST0xFX1BMQVRGT1JNIl0sImp0aSI6IjVkZWVkMGVmLWQzYjUtNDA1MS1hNzQzLTExY2ExOWRmNDkwNiIsImNsaWVudF9pZCI6IndlYl9hcHAifQ.lTiGt7E4k1SIyEemZFt2G3lvTuT7uGeeIuDbJ3s5Srt1Z5sxoxSy14lrPQu05mEPLlzbsGNvya_r5s0HxyWKL6etnO1PvxU8YQha1AlmlEm7rjmABl7lsCwbM4PpuLu6_-EzE3bylAz7FcrBOCfuKJp27w5ekg-UugqzGxAiTzW1Y0_l02PFX-aKsvQ99ufNTk7grFLisfhjAIDdGsbV0kKhtZFDOu4TaqG41RF1XNx7ynmbwwHJbWsmVqp7OGutuiY0yqRug8R9B2cMG0CX2qHxb3yf8siR9dOauP3nQI_d1ufw-oWu4ydGfmSovY3XMf61zAVUwI-iu-fiJsoXmQ",
+    "scope" : "openid",
+    "token_type" : "bearer",
+    "expires_in" : 86399,
+    "acType" : 4,
+    "jti" : "b3ee4196-84f7-4aca-86fd-bb5d50ec7065",
+    "username" : "victor"
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:48] DEBUG 【获取token】：bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjQ2MjgxMjcsInVzZXJfbmFtZSI6IlBMQVRfeHFfZG91YmxlfHZpY3RvciIsImF1dGhvcml0aWVzIjpbIlJPTEVfUExBVEZPUk0iXSwianRpIjoiYjNlZTQxOTYtODRmNy00YWNhLTg2ZmQtYmI1ZDUwZWM3MDY1IiwiY2xpZW50X2lkIjoid2ViX2FwcCIsInNjb3BlIjpbIm9wZW5pZCJdfQ.OJpRH0tAfYLkh36EDvkxAkxNAw5Oq6P9ettkB8P4Xv0j-cNNOyoTladaDE023OjMrd81G0sQvGlG8pTaWhrjgY8MMjMv08L_F1mVkcNxWNEMttjwTh8MH24sbJxMq8m1BUBUS7EHfn6xFWFN6IVSnzn1sFczvh_1fcs-TWqe8ipI9Nyvf60x2moh8-Nnj_fDJLUrPzCeHXpKQar35_vOlsvzSl5RC9e-g-tBg_dPyTc1Z5j9Ml9AKBFvDW_dJml7aC81YqdUUZ2eDduyWbaQyJmtDCUMuEI0HUcPyRdTEFZEkQOeUaXmrffQ5bPIv_aDRn-tuEhgA-9zp1iShDGLpw
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:44] INFO 【登陆鉴权control】 | victor 123456
+Tue, 24 Apr 2018 11:48:48 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:48:48 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /uaa/apid/control/login?grant_type=password&username=victor&password=123456&code=000000 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:48] DEBUG {
+  "data" : {
+    "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjQ2MjgxMjcsInVzZXJfbmFtZSI6IkNPTlRST0xfYmNhcHBpZDAyfHZpY3RvciIsImF1dGhvcml0aWVzIjpbIlJPTEVfQ09OVFJPTCJdLCJqdGkiOiI5MTJjY2E0Ny0xZTViLTQ4OWQtODgzYS04MDRhNTg4Y2E1ZWYiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.JqLKyTIA5P7wuFukNDwMo0MlV71g7B7X3uF0idxeQOjbEpl1BTEC3uHjiRJUCVlGyTDrNIXEqldvJ8FR9SvnrwsTxl1OnnvaybXj247OoP1I4C_GUspfnxdBhOAkVrgRFzcZI8XaayJqQ6nzdhgv2FNqQ6O30LjwN4o7BJo5sn0j8J-d9G24AJNEVMtIMg2MG2TUYg-05UbVASan4Oe-CfoKRhh98KyYdXFKch0O5V5rTwGDk4d4iIpN_tGxW7IN-IlTY3Tu__CVQjHnMfUvljTfmArc-ChaWwVZLik0lxPFYJpQewNenWx8rJorl6wizC0GXky0aG_zDYhrbjuSeQ",
+    "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJDT05UUk9MX2JjYXBwaWQwMnx2aWN0b3IiLCJzY29wZSI6WyJvcGVuaWQiXSwiYXRpIjoiOTEyY2NhNDctMWU1Yi00ODlkLTg4M2EtODA0YTU4OGNhNWVmIiwiZXhwIjoxNTI3MTMzNzI3LCJhdXRob3JpdGllcyI6WyJST0xFX0NPTlRST0wiXSwianRpIjoiMTY3NmNjZjUtYTI1ZC00OTkyLTg4NmQtOTQ1N2I3YWUzYjYxIiwiY2xpZW50X2lkIjoid2ViX2FwcCJ9.EG8QCRql_B01OQRX2TFZYV_cPQh-Cffdaip043BmrQPbEd1c9sDWJFFi5a0uZ_vliZA6sxCkCLTtXCxXdeZBCIZFs40Ek5YMphf3AzTvuVIbvUOrbl1a4ZfQC6SvVkzDstsTomue6O7vXBilZZn1J_BJjx02DskG_VsiFEMm7ZQTorjMIGVRxiY5hRp9v8LkKXZyXEjOtFVryoLUOQwSyZnKgczJf7l-y0VBLvAtda6o6wo8VuYpvbHd33P1Qjn6AnpKXuHgT7rYLkqvyaH0Fnj_Ott5XQUVX4RQ4jjyKu4jwACrEYIOsRW-qXzwTWN4BjsXm-PONcucTcY4s67EgQ",
+    "scope" : "openid",
+    "token_type" : "bearer",
+    "expires_in" : 86399,
+    "acType" : 5,
+    "jti" : "912cca47-1e5b-489d-883a-804a588ca5ef",
+    "username" : "victor"
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:48] DEBUG 【获取token】：bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjQ2MjgxMjcsInVzZXJfbmFtZSI6IkNPTlRST0xfYmNhcHBpZDAyfHZpY3RvciIsImF1dGhvcml0aWVzIjpbIlJPTEVfQ09OVFJPTCJdLCJqdGkiOiI5MTJjY2E0Ny0xZTViLTQ4OWQtODgzYS04MDRhNTg4Y2E1ZWYiLCJjbGllbnRfaWQiOiJ3ZWJfYXBwIiwic2NvcGUiOlsib3BlbmlkIl19.JqLKyTIA5P7wuFukNDwMo0MlV71g7B7X3uF0idxeQOjbEpl1BTEC3uHjiRJUCVlGyTDrNIXEqldvJ8FR9SvnrwsTxl1OnnvaybXj247OoP1I4C_GUspfnxdBhOAkVrgRFzcZI8XaayJqQ6nzdhgv2FNqQ6O30LjwN4o7BJo5sn0j8J-d9G24AJNEVMtIMg2MG2TUYg-05UbVASan4Oe-CfoKRhh98KyYdXFKch0O5V5rTwGDk4d4iIpN_tGxW7IN-IlTY3Tu__CVQjHnMfUvljTfmArc-ChaWwVZLik0lxPFYJpQewNenWx8rJorl6wizC0GXky0aG_zDYhrbjuSeQ
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:44] INFO ***************开始执行用例（CmsProcess）***************
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:44] INFO 【登陆鉴权member】 | vctscript 123456
+Tue, 24 Apr 2018 11:48:48 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:48:48 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /uaa/apid/member/login HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:48] DEBUG {
+  "data" : {
+    "access_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjQ2MjgxMjcsInVzZXJfbmFtZSI6InhxX2RvdWJsZXx2Y3RzY3JpcHQiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiM2NlM2I4M2YtMjJiYi00ZmNlLThmMTQtOGE4OWNkZWQ3YzViIiwiY2xpZW50X2lkIjoid2ViX2FwcCIsInNjb3BlIjpbIm9wZW5pZCJdfQ.VFC5oH7cqoWg2hohvjZnyfKzBMhJuoDGVgLdr94gH4KiHZgNmlGLnVwZvbJTxIUTIf9Af-YbkEzDI_WuOrD1weGLATCjmMecD2oMVlOyZ6NSU-S8nRwHnYs855Jw6A2LOWeXe5fhFiBTlSDLsbc7HVxEKlmEFv_ou2vYOToVy7vLSeYFExJFWZREgyLreErFNqg5MW0dg5r9vL47nKx-QUQ1n2__cNBGwMgie9q4TdhYHRttQnEjz2efrQipTT9mw9H6OIN3hzhbhxD0mUMOmJaJ0rll3ERhwORLfFYDrIhOai35XkWwPIHr57qjEqP_4RGIALfK2mH94DQkLMk2rQ",
+    "refresh_token" : "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJ4cV9kb3VibGV8dmN0c2NyaXB0Iiwic2NvcGUiOlsib3BlbmlkIl0sImF0aSI6IjNjZTNiODNmLTIyYmItNGZjZS04ZjE0LThhODljZGVkN2M1YiIsImV4cCI6MTUyNzEzMzcyNywiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImp0aSI6Ijc0ZGVlN2FkLWMxOTQtNGE5MC05OGJiLWE2MzZiOTQ3OThmNyIsImNsaWVudF9pZCI6IndlYl9hcHAifQ.H1DfQjAHwRYn0B6zxQBJQ8wTEfF-k_OHo_nxY8AVd7PqR9beYx5S3DqBsfFCH4_vrhxfdgA9CL0NWRGjLZ6L7nqDnAl9NJk3yO7kE72xW6WniQonYMkBCBGrRl3_XXxjSM7-HQy20ktXS18K7xSb0roBFPuI6TXHBFeTJVRJlxeZqgVnNLd79tMixVxpBhS_pv0F-ctZR6RpdryQk7PRrdvNdwW8cCfPPbtKHPodNP-mo8C5kx2W0ChhUsjeXb6jhn8bZ4SfwN8OtOgcxuOYKcygwbMFrFg2A9HxRqvUPBRsAq-gClFr4AzIvaQKc7XcbUiak_FaQB3lHqR2umVQvA",
+    "scope" : "openid",
+    "token_type" : "bearer",
+    "expires_in" : 86399,
+    "acType" : 1,
+    "jti" : "3ce3b83f-22bb-4fce-8f14-8a89cded7c5b",
+    "username" : "vctscript"
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:48:48 pylog.py[line:48] DEBUG 【获取token】：bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MjQ2MjgxMjcsInVzZXJfbmFtZSI6InhxX2RvdWJsZXx2Y3RzY3JpcHQiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwianRpIjoiM2NlM2I4M2YtMjJiYi00ZmNlLThmMTQtOGE4OWNkZWQ3YzViIiwiY2xpZW50X2lkIjoid2ViX2FwcCIsInNjb3BlIjpbIm9wZW5pZCJdfQ.VFC5oH7cqoWg2hohvjZnyfKzBMhJuoDGVgLdr94gH4KiHZgNmlGLnVwZvbJTxIUTIf9Af-YbkEzDI_WuOrD1weGLATCjmMecD2oMVlOyZ6NSU-S8nRwHnYs855Jw6A2LOWeXe5fhFiBTlSDLsbc7HVxEKlmEFv_ou2vYOToVy7vLSeYFExJFWZREgyLreErFNqg5MW0dg5r9vL47nKx-QUQ1n2__cNBGwMgie9q4TdhYHRttQnEjz2efrQipTT9mw9H6OIN3hzhbhxD0mUMOmJaJ0rll3ERhwORLfFYDrIhOai35XkWwPIHr57qjEqP_4RGIALfK2mH94DQkLMk2rQ
+Tue, 24 Apr 2018 11:48:48 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): admin.baochiapi.com
+Tue, 24 Apr 2018 11:48:50 connectionpool.py[line:396] DEBUG http://admin.baochiapi.com:80 "POST /photo/upload HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:48:50 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): admin.baochiapi.com
+Tue, 24 Apr 2018 11:48:53 connectionpool.py[line:396] DEBUG http://admin.baochiapi.com:80 "POST /photo/upload HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:48:53 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): admin.baochiapi.com
+Tue, 24 Apr 2018 11:48:55 connectionpool.py[line:396] DEBUG http://admin.baochiapi.com:80 "POST /photo/upload HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:48:55 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): admin.baochiapi.com
+Tue, 24 Apr 2018 11:48:57 connectionpool.py[line:396] DEBUG http://admin.baochiapi.com:80 "POST /photo/upload HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:48:57 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): admin.baochiapi.com
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://admin.baochiapi.com:80 "POST /photo/upload HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/site/view HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【站点信息-resp】{
+  "data" : {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : 1,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694303,
+    "cid" : 1,
+    "platId" : 38,
+    "name" : "",
+    "iconUrl" : "T1jaZTByJT1RCvBVdK",
+    "logoUrl" : "T1MyZTByJT1RCvBVdK",
+    "siteUrl" : "",
+    "status" : 1,
+    "h5Name" : "自动化测试站点名称",
+    "h5SiteUrl" : "",
+    "h5LogoUrl" : "T1iRZTByhT1RCvBVdK",
+    "h5IconUrl" : "123",
+    "pcSiteUrl" : "123"
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_01_业主彩种排序设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-config/apis/plat/lotteryWeight/list?page=1&rows=100&sideType=2 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【彩种排序读取-resp】{
+  "data" : {
+    "totalSize" : 28,
+    "pageSize" : 100,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 157,
+      "createTime" : 1522588758805,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524473769123,
+      "cid" : 366,
+      "platId" : 38,
+      "lotteryId" : 116,
+      "sideType" : 2,
+      "lotteryName" : "重庆秒秒彩双面彩",
+      "weight" : 99,
+      "status" : 1,
+      "modifyUsername" : "victor",
+      "imgUrl" : "T1JtYTByJT1RCvBVdK",
+      "aliasName" : "重庆秒秒秒彩"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 125,
+      "createTime" : 1521534684897,
+      "modifyUser" : 122,
+      "modifyTime" : 1523603649462,
+      "cid" : 301,
+      "platId" : 38,
+      "lotteryId" : 32,
+      "sideType" : 2,
+      "lotteryName" : "QQ分分彩双面彩",
+      "weight" : 98,
+      "status" : 1,
+      "modifyUsername" : "test_marvin",
+      "imgUrl" : "T1uyYTByJT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 125,
+      "createTime" : 1521534684894,
+      "modifyUser" : 2276,
+      "modifyTime" : 1523499821567,
+      "cid" : 299,
+      "platId" : 38,
+      "lotteryId" : 30,
+      "sideType" : 2,
+      "lotteryName" : "幸运28双面彩",
+      "weight" : 98,
+      "status" : 1,
+      "modifyUsername" : "test_bella",
+      "imgUrl" : "T1CyYTByhT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 118,
+      "createTime" : 1520320876201,
+      "modifyUser" : 2276,
+      "modifyTime" : 1523499814132,
+      "cid" : 216,
+      "platId" : 38,
+      "lotteryId" : 112,
+      "sideType" : 2,
+      "lotteryName" : "韩国1.5分彩双面彩",
+      "weight" : 97,
+      "status" : 1,
+      "modifyUsername" : "test_bella",
+      "imgUrl" : "T1jtZTByJT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730814013,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771550752,
+      "cid" : 91,
+      "platId" : 38,
+      "lotteryId" : 2,
+      "sideType" : 2,
+      "lotteryName" : "重庆时时彩双面彩",
+      "weight" : 97,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T13yETByAT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730815508,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771547232,
+      "cid" : 101,
+      "platId" : 38,
+      "lotteryId" : 22,
+      "sideType" : 2,
+      "lotteryName" : "湖北快3双面彩",
+      "weight" : 95,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1LyJTBXDT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 2396,
+      "createTime" : 1516761554000,
+      "modifyUser" : 2295,
+      "modifyTime" : 1522640366595,
+      "cid" : 169,
+      "platId" : 38,
+      "lotteryId" : 110,
+      "sideType" : 2,
+      "lotteryName" : "五分六合彩双面彩",
+      "weight" : 94,
+      "status" : 1,
+      "modifyUsername" : "victor",
+      "imgUrl" : "T1lyETBybT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730814335,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771554785,
+      "cid" : 94,
+      "platId" : 38,
+      "lotteryId" : 8,
+      "sideType" : 2,
+      "lotteryName" : "北京PK10双面彩",
+      "weight" : 93,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1TyETByWT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 125,
+      "createTime" : 1523856080028,
+      "modifyUser" : 2276,
+      "modifyTime" : 1524203719535,
+      "cid" : 370,
+      "platId" : 38,
+      "lotteryId" : 36,
+      "sideType" : 2,
+      "lotteryName" : "澳洲3分彩双面彩双面彩",
+      "weight" : 92,
+      "status" : 1,
+      "modifyUsername" : "test_bella",
+      "imgUrl" : "T14yDTByJT1RCvBVdK"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 118,
+      "createTime" : 1520320876204,
+      "modifyUser" : 2295,
+      "modifyTime" : 1522640370237,
+      "cid" : 218,
+      "platId" : 38,
+      "lotteryId" : 114,
+      "sideType" : 2,
+      "lotteryName" : "东京1.5分彩双面彩",
+      "weight" : 91,
+      "status" : 1,
+      "modifyUsername" : "victor",
+      "imgUrl" : "T1oyJTBXYT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730816108,
+      "modifyUser" : 2276,
+      "modifyTime" : 1524203712175,
+      "cid" : 104,
+      "platId" : 38,
+      "lotteryId" : 106,
+      "sideType" : 2,
+      "lotteryName" : "秒速快3双面彩",
+      "weight" : 91,
+      "status" : 1,
+      "modifyUsername" : "test_bella",
+      "imgUrl" : "T17tETBy_T1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730814469,
+      "modifyUser" : 2276,
+      "modifyTime" : 1522808653488,
+      "cid" : 95,
+      "platId" : 38,
+      "lotteryId" : 10,
+      "sideType" : 2,
+      "lotteryName" : "香港六合彩双面彩",
+      "weight" : 91,
+      "status" : 1,
+      "modifyUsername" : "test_bella",
+      "imgUrl" : "T1CyhTByDT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730814087,
+      "modifyUser" : 123,
+      "modifyTime" : 1522227312679,
+      "cid" : 92,
+      "platId" : 38,
+      "lotteryId" : 4,
+      "sideType" : 2,
+      "lotteryName" : "江西11选5双面彩",
+      "weight" : 91,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T15tETByWT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 122,
+      "createTime" : 1520909722145,
+      "modifyUser" : 2276,
+      "modifyTime" : 1522808581175,
+      "cid" : 264,
+      "platId" : 38,
+      "lotteryId" : 28,
+      "sideType" : 2,
+      "lotteryName" : "台湾5分彩双面彩",
+      "weight" : 90,
+      "status" : 1,
+      "modifyUsername" : "test_bella",
+      "imgUrl" : "T1atbTByJT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 122,
+      "createTime" : 1520909722143,
+      "modifyUser" : 125,
+      "modifyTime" : 1523856711268,
+      "cid" : 262,
+      "platId" : 38,
+      "lotteryId" : 26,
+      "sideType" : 2,
+      "lotteryName" : "北京时时彩双面彩",
+      "weight" : 90,
+      "status" : 1,
+      "modifyUsername" : "test_len",
+      "imgUrl" : "T1.abTByJT1RCvBVdK",
+      "aliasName" : "北京首都彩"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 2396,
+      "createTime" : 1516761554000,
+      "modifyUser" : 2295,
+      "modifyTime" : 1521771176900,
+      "cid" : 168,
+      "platId" : 38,
+      "lotteryId" : 24,
+      "sideType" : 2,
+      "lotteryName" : "幸运飞艇双面彩",
+      "weight" : 90,
+      "status" : 1,
+      "modifyUsername" : "victor",
+      "imgUrl" : "T1uyhTBXJT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730815007,
+      "modifyUser" : 2295,
+      "modifyTime" : 1521771174933,
+      "cid" : 98,
+      "platId" : 38,
+      "lotteryId" : 16,
+      "sideType" : 2,
+      "lotteryName" : "广东11选5双面彩",
+      "weight" : 90,
+      "status" : 1,
+      "modifyUsername" : "victor",
+      "imgUrl" : "T1maETByCT1RCvBVdK"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730815987,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771562784,
+      "cid" : 103,
+      "platId" : 38,
+      "lotteryId" : 104,
+      "sideType" : 2,
+      "lotteryName" : "秒速11选5双面彩",
+      "weight" : 89,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1eRJTBXCT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730814141,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771566425,
+      "cid" : 93,
+      "platId" : 38,
+      "lotteryId" : 6,
+      "sideType" : 2,
+      "lotteryName" : "江苏快3双面彩",
+      "weight" : 89,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1daJTByYT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730814875,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771569893,
+      "cid" : 97,
+      "platId" : 38,
+      "lotteryId" : 14,
+      "sideType" : 2,
+      "lotteryName" : "新疆时时彩双面彩",
+      "weight" : 88,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1AaJTBXxT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730815234,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771574075,
+      "cid" : 100,
+      "platId" : 38,
+      "lotteryId" : 20,
+      "sideType" : 2,
+      "lotteryName" : "安徽快3双面彩",
+      "weight" : 86,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1tRJTByVT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730814805,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771577033,
+      "cid" : 96,
+      "platId" : 38,
+      "lotteryId" : 12,
+      "sideType" : 2,
+      "lotteryName" : "天津时时彩双面彩",
+      "weight" : 85,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1JtJTBXJT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730816259,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771579630,
+      "cid" : 105,
+      "platId" : 38,
+      "lotteryId" : 108,
+      "sideType" : 2,
+      "lotteryName" : "秒速赛车双面彩",
+      "weight" : 79,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1UyxTByJT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730815030,
+      "modifyUser" : 123,
+      "modifyTime" : 1521771583274,
+      "cid" : 99,
+      "platId" : 38,
+      "lotteryId" : 18,
+      "sideType" : 2,
+      "lotteryName" : "山东11选5双面彩",
+      "weight" : 78,
+      "status" : 1,
+      "modifyUsername" : "test_adam",
+      "imgUrl" : "T1ntJTBXxT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1512730815858,
+      "modifyUser" : 2295,
+      "modifyTime" : 1522640374553,
+      "cid" : 102,
+      "platId" : 38,
+      "lotteryId" : 102,
+      "sideType" : 2,
+      "lotteryName" : "秒速时时彩双面彩",
+      "weight" : 55,
+      "status" : 1,
+      "modifyUsername" : "victor",
+      "imgUrl" : "T1TthTByxT1RCvBVdK",
+      "aliasName" : ""
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 2295,
+      "createTime" : 1524472293425,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524472293425,
+      "cid" : 388,
+      "platId" : 38,
+      "lotteryId" : 42,
+      "sideType" : 2,
+      "lotteryName" : "台湾宾果双面彩",
+      "weight" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 2295,
+      "createTime" : 1524463747913,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524463747913,
+      "cid" : 386,
+      "platId" : 38,
+      "lotteryId" : 34,
+      "sideType" : 2,
+      "lotteryName" : "北京快8双面彩",
+      "weight" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 125,
+      "createTime" : 1523856080032,
+      "modifyUser" : 2284,
+      "modifyTime" : 1523946449023,
+      "cid" : 372,
+      "platId" : 38,
+      "lotteryId" : 118,
+      "sideType" : 2,
+      "lotteryName" : "赛车秒秒彩双面彩",
+      "weight" : 1,
+      "status" : 1,
+      "modifyUsername" : "test_kris",
+      "imgUrl" : "T1pybTByJT1RCvBVdK"
+    } ],
+    "total" : 28,
+    "pageLimit" : 100,
+    "pageBegin" : 0,
+    "pageEnd" : 28
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-config/apis/plat/lotteryWeight/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【彩种排序保存-resp】{
+  "message" : "error.internalServerError",
+  "description" : "Internal server error",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_02_业主客服设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-config/apis/plat/custConfig/view HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【客服链接读取-resp】{
+  "data" : null,
+  "err" : "MULTI",
+  "msg" : "数据不唯一",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_03_业主app地址设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-config/apis/plat/appConfig/view HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【app下载地址读取-resp】{
+  "data" : {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : 125,
+    "createTime" : 1523867119140,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694253,
+    "cid" : 19,
+    "platId" : 38,
+    "url" : "http://www.vip.com",
+    "status" : 1
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-config/apis/plat/appConfig/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【app下载链接修改-request】{'version': 0, 'ifDel': 0, 'createUser': 125, 'createTime': 1523867119140, 'modifyUser': 2295, 'modifyTime': 1524464694253, 'cid': 19, 'platId': 38, 'url': 'http://www.vip.com', 'status': 1}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【app下载链接修改-resp】{
+  "message" : "error.internalServerError",
+  "description" : "Internal server error",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_04_业主站点信息设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/site/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【保存站点信息-request】{'cid': 1, 'platId': 38, 'iconUrl': 'T14aETBXxT1RCvBVdK', 'logoUrl': 'T1ltETBXET1RCvBVdK', 'status': 1, 'h5Name': '自动化测试站点名称', 'h5SiteUrl': '', 'h5LogoUrl': 'T1XtETByVT1RCvBVdK'}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【保存站点信息-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_05_业主新手教程设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/copyright/list?type=1 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【首页文案信息-resp】{
+  "data" : {
+    "totalSize" : 5,
+    "pageSize" : 20,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012513,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694395,
+      "cid" : 66,
+      "platId" : 38,
+      "code" : "BT01",
+      "clientTitle" : "新手教程",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012525,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694456,
+      "cid" : 67,
+      "platId" : 38,
+      "code" : "BT02",
+      "clientTitle" : "代理加盟",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012561,
+      "modifyUser" : 122,
+      "modifyTime" : 1521019007268,
+      "cid" : 68,
+      "platId" : 38,
+      "code" : "BT03",
+      "clientTitle" : "佣金方案",
+      "title" : "佣金方案1",
+      "content" : "<p>&nbsp; &nbsp; &nbsp; &nbsp;佣1金1以每月第一个礼拜至下月第一个礼拜一前的周日为统计期间，以联盟方案分红公式计算，由于代理部于每个月的第一礼拜三开始与代理确认金额后，在3个工作日内将佣金直接汇入申请代理登记之银行帐号。</p><p>代理说明</p><p>合作伙伴佣金=下线会员净输值X当月佣金比例（同时需满足当月最低活跃玩家数） 如果当月有效合作伙伴的下线会员净输值为负数，那么当月佣金为零，当月盈利有公司负担。 合作伙伴的佣金比例以合作伙伴下线会员净输值与合作伙伴下线有效活跃玩家而定。合作伙伴比例升级必须同时满足合作伙伴下线会员净输值和有效活跃玩家人数两个条件。如果合作伙伴下线会员净输值和有效活跃玩家人数只有其以达到升级标准，那幺将按照低一级的佣金比例发放佣金。如有效活跃玩家人数不足2人将不能获得佣金。</p><p>&nbsp;1.）有效会员：在月结区间内，总存款达到500RMB及以上的会员。</p><p>&nbsp;2.）佣金：真人视讯、电子游艺项目的【派彩】金额扣除相应费用后，乘以相应退佣比例（以扣除相应费用后的净盈利为准）。</p><p>&nbsp;3.）合作伙伴获得的支付费用，其中优惠和市场费用将会累计并在每月的佣金中扣除。这些费用包括：</p><p>&nbsp;转账费用-包括所有代理会员的存款和提款费用。</p><p>&nbsp;行政费用-任何费用支出（为支出或协助代理而产生的促销或营销活动支出）。</p><p>&nbsp;优惠红利-给予代理会员的现金红利或是折扣。若本月可获得佣金为负数，负盈利及费用将会带到下个月继续累计至可获得佣金为正数即可领取。</p><p>例如： 联盟体系当月最低活动会员达6人，当月派彩：真人视讯￥200000，电子游艺￥20000。如联盟体系当月产生相应费用统计为￥100000，则当月佣金计算方式为：（￥200000+￥20000）X30%-（相应产生的费用￥100000*30%）=￥36000总退佣金额</p><p>adam佣金方案测试01--修改</p>",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "test_marvin"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012584,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694538,
+      "cid" : 69,
+      "platId" : 38,
+      "code" : "BT04",
+      "clientTitle" : "关于我们",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012584,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694606,
+      "cid" : 100,
+      "platId" : 38,
+      "code" : "BT05",
+      "clientTitle" : "充值教程",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    } ],
+    "total" : 5,
+    "pageLimit" : 20,
+    "pageBegin" : 0,
+    "pageEnd" : 5
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/copyright/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【修改网站说明文案-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_06_业主代理加盟设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/copyright/list?type=1 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【首页文案信息-resp】{
+  "data" : {
+    "totalSize" : 5,
+    "pageSize" : 20,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012513,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694395,
+      "cid" : 66,
+      "platId" : 38,
+      "code" : "BT01",
+      "clientTitle" : "新手教程",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012525,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694456,
+      "cid" : 67,
+      "platId" : 38,
+      "code" : "BT02",
+      "clientTitle" : "代理加盟",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012561,
+      "modifyUser" : 122,
+      "modifyTime" : 1521019007268,
+      "cid" : 68,
+      "platId" : 38,
+      "code" : "BT03",
+      "clientTitle" : "佣金方案",
+      "title" : "佣金方案1",
+      "content" : "<p>&nbsp; &nbsp; &nbsp; &nbsp;佣1金1以每月第一个礼拜至下月第一个礼拜一前的周日为统计期间，以联盟方案分红公式计算，由于代理部于每个月的第一礼拜三开始与代理确认金额后，在3个工作日内将佣金直接汇入申请代理登记之银行帐号。</p><p>代理说明</p><p>合作伙伴佣金=下线会员净输值X当月佣金比例（同时需满足当月最低活跃玩家数） 如果当月有效合作伙伴的下线会员净输值为负数，那么当月佣金为零，当月盈利有公司负担。 合作伙伴的佣金比例以合作伙伴下线会员净输值与合作伙伴下线有效活跃玩家而定。合作伙伴比例升级必须同时满足合作伙伴下线会员净输值和有效活跃玩家人数两个条件。如果合作伙伴下线会员净输值和有效活跃玩家人数只有其以达到升级标准，那幺将按照低一级的佣金比例发放佣金。如有效活跃玩家人数不足2人将不能获得佣金。</p><p>&nbsp;1.）有效会员：在月结区间内，总存款达到500RMB及以上的会员。</p><p>&nbsp;2.）佣金：真人视讯、电子游艺项目的【派彩】金额扣除相应费用后，乘以相应退佣比例（以扣除相应费用后的净盈利为准）。</p><p>&nbsp;3.）合作伙伴获得的支付费用，其中优惠和市场费用将会累计并在每月的佣金中扣除。这些费用包括：</p><p>&nbsp;转账费用-包括所有代理会员的存款和提款费用。</p><p>&nbsp;行政费用-任何费用支出（为支出或协助代理而产生的促销或营销活动支出）。</p><p>&nbsp;优惠红利-给予代理会员的现金红利或是折扣。若本月可获得佣金为负数，负盈利及费用将会带到下个月继续累计至可获得佣金为正数即可领取。</p><p>例如： 联盟体系当月最低活动会员达6人，当月派彩：真人视讯￥200000，电子游艺￥20000。如联盟体系当月产生相应费用统计为￥100000，则当月佣金计算方式为：（￥200000+￥20000）X30%-（相应产生的费用￥100000*30%）=￥36000总退佣金额</p><p>adam佣金方案测试01--修改</p>",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "test_marvin"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012584,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694538,
+      "cid" : 69,
+      "platId" : 38,
+      "code" : "BT04",
+      "clientTitle" : "关于我们",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012584,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694606,
+      "cid" : 100,
+      "platId" : 38,
+      "code" : "BT05",
+      "clientTitle" : "充值教程",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    } ],
+    "total" : 5,
+    "pageLimit" : 20,
+    "pageBegin" : 0,
+    "pageEnd" : 5
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/copyright/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【修改网站说明文案-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_07_业主关于我们设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/copyright/list?type=1 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【首页文案信息-resp】{
+  "data" : {
+    "totalSize" : 5,
+    "pageSize" : 20,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012513,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694395,
+      "cid" : 66,
+      "platId" : 38,
+      "code" : "BT01",
+      "clientTitle" : "新手教程",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012525,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694456,
+      "cid" : 67,
+      "platId" : 38,
+      "code" : "BT02",
+      "clientTitle" : "代理加盟",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012561,
+      "modifyUser" : 122,
+      "modifyTime" : 1521019007268,
+      "cid" : 68,
+      "platId" : 38,
+      "code" : "BT03",
+      "clientTitle" : "佣金方案",
+      "title" : "佣金方案1",
+      "content" : "<p>&nbsp; &nbsp; &nbsp; &nbsp;佣1金1以每月第一个礼拜至下月第一个礼拜一前的周日为统计期间，以联盟方案分红公式计算，由于代理部于每个月的第一礼拜三开始与代理确认金额后，在3个工作日内将佣金直接汇入申请代理登记之银行帐号。</p><p>代理说明</p><p>合作伙伴佣金=下线会员净输值X当月佣金比例（同时需满足当月最低活跃玩家数） 如果当月有效合作伙伴的下线会员净输值为负数，那么当月佣金为零，当月盈利有公司负担。 合作伙伴的佣金比例以合作伙伴下线会员净输值与合作伙伴下线有效活跃玩家而定。合作伙伴比例升级必须同时满足合作伙伴下线会员净输值和有效活跃玩家人数两个条件。如果合作伙伴下线会员净输值和有效活跃玩家人数只有其以达到升级标准，那幺将按照低一级的佣金比例发放佣金。如有效活跃玩家人数不足2人将不能获得佣金。</p><p>&nbsp;1.）有效会员：在月结区间内，总存款达到500RMB及以上的会员。</p><p>&nbsp;2.）佣金：真人视讯、电子游艺项目的【派彩】金额扣除相应费用后，乘以相应退佣比例（以扣除相应费用后的净盈利为准）。</p><p>&nbsp;3.）合作伙伴获得的支付费用，其中优惠和市场费用将会累计并在每月的佣金中扣除。这些费用包括：</p><p>&nbsp;转账费用-包括所有代理会员的存款和提款费用。</p><p>&nbsp;行政费用-任何费用支出（为支出或协助代理而产生的促销或营销活动支出）。</p><p>&nbsp;优惠红利-给予代理会员的现金红利或是折扣。若本月可获得佣金为负数，负盈利及费用将会带到下个月继续累计至可获得佣金为正数即可领取。</p><p>例如： 联盟体系当月最低活动会员达6人，当月派彩：真人视讯￥200000，电子游艺￥20000。如联盟体系当月产生相应费用统计为￥100000，则当月佣金计算方式为：（￥200000+￥20000）X30%-（相应产生的费用￥100000*30%）=￥36000总退佣金额</p><p>adam佣金方案测试01--修改</p>",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "test_marvin"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012584,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694538,
+      "cid" : 69,
+      "platId" : 38,
+      "code" : "BT04",
+      "clientTitle" : "关于我们",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012584,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694606,
+      "cid" : 100,
+      "platId" : 38,
+      "code" : "BT05",
+      "clientTitle" : "充值教程",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    } ],
+    "total" : 5,
+    "pageLimit" : 20,
+    "pageBegin" : 0,
+    "pageEnd" : 5
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/copyright/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【修改网站说明文案-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_08_业主充值教程设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/copyright/list?type=1 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【首页文案信息-resp】{
+  "data" : {
+    "totalSize" : 5,
+    "pageSize" : 20,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012513,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694395,
+      "cid" : 66,
+      "platId" : 38,
+      "code" : "BT01",
+      "clientTitle" : "新手教程",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012525,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694456,
+      "cid" : 67,
+      "platId" : 38,
+      "code" : "BT02",
+      "clientTitle" : "代理加盟",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012561,
+      "modifyUser" : 122,
+      "modifyTime" : 1521019007268,
+      "cid" : 68,
+      "platId" : 38,
+      "code" : "BT03",
+      "clientTitle" : "佣金方案",
+      "title" : "佣金方案1",
+      "content" : "<p>&nbsp; &nbsp; &nbsp; &nbsp;佣1金1以每月第一个礼拜至下月第一个礼拜一前的周日为统计期间，以联盟方案分红公式计算，由于代理部于每个月的第一礼拜三开始与代理确认金额后，在3个工作日内将佣金直接汇入申请代理登记之银行帐号。</p><p>代理说明</p><p>合作伙伴佣金=下线会员净输值X当月佣金比例（同时需满足当月最低活跃玩家数） 如果当月有效合作伙伴的下线会员净输值为负数，那么当月佣金为零，当月盈利有公司负担。 合作伙伴的佣金比例以合作伙伴下线会员净输值与合作伙伴下线有效活跃玩家而定。合作伙伴比例升级必须同时满足合作伙伴下线会员净输值和有效活跃玩家人数两个条件。如果合作伙伴下线会员净输值和有效活跃玩家人数只有其以达到升级标准，那幺将按照低一级的佣金比例发放佣金。如有效活跃玩家人数不足2人将不能获得佣金。</p><p>&nbsp;1.）有效会员：在月结区间内，总存款达到500RMB及以上的会员。</p><p>&nbsp;2.）佣金：真人视讯、电子游艺项目的【派彩】金额扣除相应费用后，乘以相应退佣比例（以扣除相应费用后的净盈利为准）。</p><p>&nbsp;3.）合作伙伴获得的支付费用，其中优惠和市场费用将会累计并在每月的佣金中扣除。这些费用包括：</p><p>&nbsp;转账费用-包括所有代理会员的存款和提款费用。</p><p>&nbsp;行政费用-任何费用支出（为支出或协助代理而产生的促销或营销活动支出）。</p><p>&nbsp;优惠红利-给予代理会员的现金红利或是折扣。若本月可获得佣金为负数，负盈利及费用将会带到下个月继续累计至可获得佣金为正数即可领取。</p><p>例如： 联盟体系当月最低活动会员达6人，当月派彩：真人视讯￥200000，电子游艺￥20000。如联盟体系当月产生相应费用统计为￥100000，则当月佣金计算方式为：（￥200000+￥20000）X30%-（相应产生的费用￥100000*30%）=￥36000总退佣金额</p><p>adam佣金方案测试01--修改</p>",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "test_marvin"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012584,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694538,
+      "cid" : 69,
+      "platId" : 38,
+      "code" : "BT04",
+      "clientTitle" : "关于我们",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046012584,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694606,
+      "cid" : 100,
+      "platId" : 38,
+      "code" : "BT05",
+      "clientTitle" : "充值教程",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 1,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    } ],
+    "total" : 5,
+    "pageLimit" : 20,
+    "pageBegin" : 0,
+    "pageEnd" : 5
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/copyright/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【修改网站说明文案-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_09_业主注册说明设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/copyright/list?type=2 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【注册说明信息-resp】{
+  "data" : {
+    "totalSize" : 1,
+    "pageSize" : 20,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694685,
+      "cid" : 144,
+      "platId" : 38,
+      "code" : "ZT03",
+      "clientTitle" : "注册说明",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 2,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    } ],
+    "total" : 1,
+    "pageLimit" : 20,
+    "pageBegin" : 0,
+    "pageEnd" : 1
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/copyright/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【修改网站说明文案-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_10_业主存款弹窗设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/copyright/list?type=3 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【线上存取文案信息-resp】{
+  "data" : {
+    "totalSize" : 4,
+    "pageSize" : 20,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046013930,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694735,
+      "cid" : 70,
+      "platId" : 38,
+      "code" : "AT01",
+      "clientTitle" : "存款弹窗",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694877,
+      "cid" : 133,
+      "platId" : 38,
+      "code" : "AT02",
+      "clientTitle" : "支付宝钱包",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694929,
+      "cid" : 134,
+      "platId" : 38,
+      "code" : "AT03",
+      "clientTitle" : "微信钱包",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : -1,
+      "modifyTime" : 0,
+      "cid" : 158,
+      "platId" : 38,
+      "code" : "AT04",
+      "clientTitle" : "银行转账说明",
+      "title" : "银行转账说明",
+      "content" : "",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "system"
+    } ],
+    "total" : 4,
+    "pageLimit" : 20,
+    "pageBegin" : 0,
+    "pageEnd" : 4
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/copyright/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【修改网站说明文案-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_11_业主支付宝钱包设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/copyright/list?type=3 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【线上存取文案信息-resp】{
+  "data" : {
+    "totalSize" : 4,
+    "pageSize" : 20,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046013930,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694735,
+      "cid" : 70,
+      "platId" : 38,
+      "code" : "AT01",
+      "clientTitle" : "存款弹窗",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694877,
+      "cid" : 133,
+      "platId" : 38,
+      "code" : "AT02",
+      "clientTitle" : "支付宝钱包",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694929,
+      "cid" : 134,
+      "platId" : 38,
+      "code" : "AT03",
+      "clientTitle" : "微信钱包",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : -1,
+      "modifyTime" : 0,
+      "cid" : 158,
+      "platId" : 38,
+      "code" : "AT04",
+      "clientTitle" : "银行转账说明",
+      "title" : "银行转账说明",
+      "content" : "",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "system"
+    } ],
+    "total" : 4,
+    "pageLimit" : 20,
+    "pageBegin" : 0,
+    "pageEnd" : 4
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/copyright/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【修改网站说明文案-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_12_业主微信钱包设定
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/copyright/list?type=3 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【线上存取文案信息-resp】{
+  "data" : {
+    "totalSize" : 4,
+    "pageSize" : 20,
+    "totalPage" : 1,
+    "currentPage" : 1,
+    "rows" : [ {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : 91,
+      "createTime" : 1513046013930,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694735,
+      "cid" : 70,
+      "platId" : 38,
+      "code" : "AT01",
+      "clientTitle" : "存款弹窗",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694877,
+      "cid" : 133,
+      "platId" : 38,
+      "code" : "AT02",
+      "clientTitle" : "支付宝钱包",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : 2295,
+      "modifyTime" : 1524464694929,
+      "cid" : 134,
+      "platId" : 38,
+      "code" : "AT03",
+      "clientTitle" : "微信钱包",
+      "title" : "自动化测试",
+      "content" : "自动化测试",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "victor"
+    }, {
+      "version" : 0,
+      "ifDel" : 0,
+      "createUser" : -1,
+      "createTime" : 0,
+      "modifyUser" : -1,
+      "modifyTime" : 0,
+      "cid" : 158,
+      "platId" : 38,
+      "code" : "AT04",
+      "clientTitle" : "银行转账说明",
+      "title" : "银行转账说明",
+      "content" : "",
+      "type" : 3,
+      "client" : 1,
+      "status" : 1,
+      "modifyUsername" : "system"
+    } ],
+    "total" : 4,
+    "pageLimit" : 20,
+    "pageBegin" : 0,
+    "pageEnd" : 4
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/copyright/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【修改网站说明文案-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_13_业主优惠活动列表设定_全部删除
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/activity/list?page=1&rows=15 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【搜索优惠活动列表-resp】{
+  "data" : {
+    "totalSize" : 0,
+    "pageSize" : 15,
+    "totalPage" : 0,
+    "currentPage" : 1,
+    "rows" : [ ],
+    "total" : 0,
+    "pageLimit" : 15,
+    "pageBegin" : 0,
+    "pageEnd" : 0
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_14_业主优惠活动列表设定_新增
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/activity/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:44] INFO TestCase---------------test_15_业主轮播图设定_全部删除
+Tue, 24 Apr 2018 11:49:00 pylog.py[line:48] DEBUG 【搜索轮播图列表-request】{'page': 1, 'rows': 15}
+Tue, 24 Apr 2018 11:49:00 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/carousel/list?page=1&rows=15 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索轮播图列表-resp】{
+  "data" : {
+    "totalSize" : 0,
+    "pageSize" : 15,
+    "totalPage" : 0,
+    "currentPage" : 1,
+    "rows" : [ ],
+    "total" : 0,
+    "pageLimit" : 15,
+    "pageBegin" : 0,
+    "pageEnd" : 0
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_16_业主轮播图设定_新增
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/carousel/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_17_业主公告设定_全部删除
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/notice/list?page=1&rows=15 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索公告列表-request】{'page': 1, 'rows': 15, 'status': None, 'title': None}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索公告列表-resp】{
+  "data" : {
+    "totalSize" : 0,
+    "pageSize" : 15,
+    "totalPage" : 0,
+    "currentPage" : 1,
+    "rows" : [ ],
+    "total" : 0,
+    "pageLimit" : 15,
+    "pageBegin" : 0,
+    "pageEnd" : 0
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_18_业主公告设定_新增
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/notice/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【创建公告-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/notice/list?page=1&rows=15&status=0 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索公告列表-request】{'page': 1, 'rows': 15, 'status': 0, 'title': None}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索公告列表-resp】{
+  "data" : {
+    "totalSize" : 0,
+    "pageSize" : 15,
+    "totalPage" : 0,
+    "currentPage" : 1,
+    "rows" : [ ],
+    "total" : 0,
+    "pageLimit" : 15,
+    "pageBegin" : 0,
+    "pageEnd" : 0
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【启用公告-request】{'status': 1}
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/notice/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【启用公告-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_19_业主首页弹屏设定_全部删除
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/popText/list?page=1&rows=15 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索首页弹屏列表-request】{'page': 1, 'rows': 15}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索首页弹屏列表-resp】{
+  "data" : {
+    "totalSize" : 0,
+    "pageSize" : 15,
+    "totalPage" : 0,
+    "currentPage" : 1,
+    "rows" : [ ],
+    "total" : 0,
+    "pageLimit" : 15,
+    "pageBegin" : 0,
+    "pageEnd" : 0
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_20_业主首页弹屏设定_新增
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【创建首页弹屏-requsts】{'title': '自动化测试弹屏', 'content': '自动化测试首页弹屏内容'}
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/popText/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【创建首页弹屏-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /ares-cms/apis/plat/popText/list?page=1&rows=15 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索首页弹屏列表-request】{'page': 1, 'rows': 15}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【搜索首页弹屏列表-resp】{
+  "data" : {
+    "totalSize" : 0,
+    "pageSize" : 15,
+    "totalPage" : 0,
+    "currentPage" : 1,
+    "rows" : [ ],
+    "total" : 0,
+    "pageLimit" : 15,
+    "pageBegin" : 0,
+    "pageEnd" : 0
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【启用首页弹屏-requsts】{'status': 1}
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/plat/popText/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【启用首页弹屏-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_21_业主站内信设定_全部删除
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_22_业主站内信设定_新增
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【发送站内信-request】{'title': 'autotest', 'content': '测试数据test data！！', 'receiveType': 0, 'receiveBody': '', 'supportTerminal': 3}
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "POST /ares-cms/apis/instationMsg/save HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【发送站内信-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Content type 'application/octet-stream' not supported",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_23_彩种排序验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/lotterys?sideType=2 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取彩种排序-resp】{
+  "data" : [ {
+    "cid" : 116,
+    "code" : "bc_ssc_chongqing",
+    "name" : "重庆秒秒秒彩",
+    "startTime" : 20180306103836,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 99,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1JtYTByJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "重庆秒秒秒彩双面彩"
+  }, {
+    "cid" : 30,
+    "code" : "pc_dd",
+    "name" : "幸运28",
+    "startTime" : 1504258200000,
+    "lotteryType" : 7,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 179,
+    "sideType" : 2,
+    "orderCount" : 98,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1CyYTByhT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "幸运28双面彩"
+  }, {
+    "cid" : 32,
+    "code" : "qq_ffc",
+    "name" : "QQ分分彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 98,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1uyYTByJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "QQ分分彩双面彩"
+  }, {
+    "cid" : 2,
+    "code" : "cq_ssc",
+    "name" : "重庆时时彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 97,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T13yETByAT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "重庆时时彩双面彩"
+  }, {
+    "cid" : 112,
+    "code" : "bc_ssc_korea",
+    "name" : "韩国1.5分彩",
+    "startTime" : 20180306103836,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 97,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1jtZTByJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "韩国1.5分彩双面彩"
+  }, {
+    "cid" : 22,
+    "code" : "hub_k3",
+    "name" : "湖北快3",
+    "startTime" : 1504258200000,
+    "lotteryType" : 3,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 81,
+    "sideType" : 2,
+    "orderCount" : 95,
+    "status" : 1,
+    "periodDesc" : "10分中开奖一次",
+    "ifHot" : 0,
+    "imgUrl" : "T1LyJTBXDT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1vRJTBXET1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "湖北快3双面彩"
+  }, {
+    "cid" : 110,
+    "code" : "bc_lhc",
+    "name" : "五分六合彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 6,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 178,
+    "sideType" : 2,
+    "orderCount" : 94,
+    "status" : 1,
+    "periodDesc" : "高频多种玩法",
+    "ifHot" : 1,
+    "imgUrl" : "T1lyETBybT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1naETBy_T1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "五分六合彩双面彩"
+  }, {
+    "cid" : 8,
+    "code" : "bj_pk10",
+    "name" : "北京PK10",
+    "startTime" : 1504258200000,
+    "lotteryType" : 4,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 178,
+    "sideType" : 2,
+    "orderCount" : 93,
+    "status" : 1,
+    "periodDesc" : "高频多种玩法",
+    "ifHot" : 1,
+    "imgUrl" : "T1TyETByWT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1naETBy_T1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "北京PK10双面彩"
+  }, {
+    "cid" : 36,
+    "code" : "az_ssc",
+    "name" : "澳洲3分彩双面彩",
+    "startTime" : 1523604161000,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 92,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T14yDTByJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "澳洲3分彩双面彩双面彩"
+  }, {
+    "cid" : 4,
+    "code" : "jx_11x5",
+    "name" : "江西11选5",
+    "startTime" : 1504258200000,
+    "lotteryType" : 2,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 84,
+    "sideType" : 2,
+    "orderCount" : 91,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T15tETByWT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1haJTBXYT1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "江西11选5双面彩"
+  }, {
+    "cid" : 10,
+    "code" : "xg_lhc",
+    "name" : "香港六合彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 6,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 1,
+    "sideType" : 2,
+    "orderCount" : 91,
+    "status" : 1,
+    "periodDesc" : "低频",
+    "ifHot" : 0,
+    "imgUrl" : "T1CyhTByDT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1PaETByVT1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "香港六合彩双面彩"
+  }, {
+    "cid" : 106,
+    "code" : "bc_k3",
+    "name" : "秒速快3",
+    "startTime" : 1504258200000,
+    "lotteryType" : 3,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 81,
+    "sideType" : 2,
+    "orderCount" : 91,
+    "status" : 1,
+    "periodDesc" : "10分中开奖一次",
+    "ifHot" : 0,
+    "imgUrl" : "T17tETBy_T1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1saJTBXhT1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "秒速快3双面彩"
+  }, {
+    "cid" : 114,
+    "code" : "bc_ssc_tokyo",
+    "name" : "东京1.5分彩",
+    "startTime" : 20180306103836,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 91,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1oyJTBXYT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "东京1.5分彩双面彩"
+  }, {
+    "cid" : 16,
+    "code" : "gd_11x5",
+    "name" : "广东11选5",
+    "startTime" : 1504258200000,
+    "lotteryType" : 2,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 84,
+    "sideType" : 2,
+    "orderCount" : 90,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 0,
+    "imgUrl" : "T1maETByCT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1oyJTBXdT1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "广东11选5双面彩"
+  }, {
+    "cid" : 24,
+    "code" : "luckship",
+    "name" : "幸运飞艇",
+    "startTime" : 1504258200000,
+    "lotteryType" : 4,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 81,
+    "sideType" : 2,
+    "orderCount" : 90,
+    "status" : 1,
+    "periodDesc" : "10分中开奖一次",
+    "ifHot" : 0,
+    "imgUrl" : "T1uyhTBXJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1vRJTBXET1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "幸运飞艇双面彩"
+  }, {
+    "cid" : 26,
+    "code" : "bj_ssc",
+    "name" : "北京首都彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 90,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1.abTByJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "北京首都彩双面彩"
+  }, {
+    "cid" : 28,
+    "code" : "tw_ssc",
+    "name" : "台湾5分彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 90,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1atbTByJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "台湾5分彩双面彩"
+  }, {
+    "cid" : 6,
+    "code" : "js_k3",
+    "name" : "江苏快3",
+    "startTime" : 1504258200000,
+    "lotteryType" : 3,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 81,
+    "sideType" : 2,
+    "orderCount" : 89,
+    "status" : 1,
+    "periodDesc" : "10分中开奖一次",
+    "ifHot" : 1,
+    "imgUrl" : "T1daJTByYT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1saJTBXhT1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "江苏快3双面彩"
+  }, {
+    "cid" : 104,
+    "code" : "bc_11x5",
+    "name" : "秒速11选5",
+    "startTime" : 1504258200000,
+    "lotteryType" : 2,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 84,
+    "sideType" : 2,
+    "orderCount" : 89,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1eRJTBXCT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1haJTBXYT1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "秒速11选5双面彩"
+  }, {
+    "cid" : 14,
+    "code" : "xj_ssc",
+    "name" : "新疆时时彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 88,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 0,
+    "imgUrl" : "T1AaJTBXxT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1sRJTBXhT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "新疆时时彩双面彩"
+  }, {
+    "cid" : 20,
+    "code" : "ah_k3",
+    "name" : "安徽快3",
+    "startTime" : 1504258200000,
+    "lotteryType" : 3,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 81,
+    "sideType" : 2,
+    "orderCount" : 86,
+    "status" : 1,
+    "periodDesc" : "10分中开奖一次",
+    "ifHot" : 0,
+    "imgUrl" : "T1tRJTByVT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1nyETBy_T1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "安徽快3双面彩"
+  }, {
+    "cid" : 12,
+    "code" : "tj_ssc",
+    "name" : "天津时时彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 85,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 0,
+    "imgUrl" : "T1JtJTBXJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1hyJTBXxT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "天津时时彩双面彩"
+  }, {
+    "cid" : 108,
+    "code" : "bc_pk10",
+    "name" : "秒速赛车",
+    "startTime" : 1504258200000,
+    "lotteryType" : 4,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 178,
+    "sideType" : 2,
+    "orderCount" : 79,
+    "status" : 1,
+    "periodDesc" : "高频多种玩法",
+    "ifHot" : 1,
+    "imgUrl" : "T1UyxTByJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1naETBy_T1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "秒速赛车双面彩"
+  }, {
+    "cid" : 18,
+    "code" : "sd_11x5",
+    "name" : "山东11选5",
+    "startTime" : 1504258200000,
+    "lotteryType" : 2,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 84,
+    "sideType" : 2,
+    "orderCount" : 78,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 0,
+    "imgUrl" : "T1ntJTBXxT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1PtETByLT1RCvBVdK/0",
+    "recentlyColsJson" : "{}",
+    "lotteryName" : "山东11选5双面彩"
+  }, {
+    "cid" : 102,
+    "code" : "bc_ssc",
+    "name" : "秒速时时彩",
+    "startTime" : 1504258200000,
+    "lotteryType" : 1,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 120,
+    "sideType" : 2,
+    "orderCount" : 55,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgUrl" : "T1TthTByxT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "秒速时时彩双面彩"
+  }, {
+    "cid" : 34,
+    "code" : "bj_q8",
+    "name" : "北京快8",
+    "startTime" : 1504258200000,
+    "lotteryType" : 8,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 179,
+    "sideType" : 2,
+    "orderCount" : 1,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "北京快8双面彩"
+  }, {
+    "cid" : 42,
+    "code" : "tw_q8",
+    "name" : "台湾宾果",
+    "startTime" : 1504258200000,
+    "lotteryType" : 8,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 179,
+    "sideType" : 2,
+    "orderCount" : 1,
+    "status" : 1,
+    "periodDesc" : "每天都开",
+    "ifHot" : 1,
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "{\"cols\":7,\"optCol\":\"万,千,十,个,总和\"}",
+    "lotteryName" : "台湾宾果双面彩"
+  }, {
+    "cid" : 118,
+    "code" : "bc_pk10_saiche",
+    "name" : "赛车秒秒彩",
+    "startTime" : 20180306103836,
+    "lotteryType" : 4,
+    "lotteryDataType" : 1,
+    "runTypePC" : 0,
+    "runTypeH5" : 1,
+    "runTypeIos" : 1,
+    "runTypeAndroid" : 1,
+    "baseNum" : 1,
+    "periodCount" : 178,
+    "sideType" : 2,
+    "orderCount" : 1,
+    "status" : 1,
+    "periodDesc" : "高频多种玩法",
+    "ifHot" : 1,
+    "imgUrl" : "T1pybTByJT1RCvBVdK",
+    "imgLeftUrl" : "http://admin.baochiapi.com/photo/pic/T1kyETBybT1RCvBVdK/0",
+    "recentlyColsJson" : "",
+    "lotteryName" : "赛车秒秒彩双面彩"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : 1524473769123
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_24_客服设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/config/custConfig HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取客服地址-resp】{
+  "data" : null,
+  "err" : "SUCCESS",
+  "msg" : "----platid=38 error:status 500 reading ApiAresConfigFeign#getCustConfig(Long); content:\n{\n  \"data\" : null,\n  \"err\" : \"MULTI\",\n  \"msg\" : \"数据不唯一\",\n  \"maxUpdateTime\" : null\n}",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_25_app地址设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/config/appConfig HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取app地址-resp】{
+  "data" : {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : 125,
+    "createTime" : 1523867119140,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694253,
+    "cid" : 19,
+    "platId" : 38,
+    "url" : "http://www.vip.com",
+    "status" : 1
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_26_站点信息设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/site HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取站点信息-resp】{
+  "data" : {
+    "cid" : 1,
+    "platName" : null,
+    "name" : "",
+    "iconUrl" : "T1jaZTByJT1RCvBVdK",
+    "logoUrl" : "T1MyZTByJT1RCvBVdK",
+    "siteUrl" : "",
+    "h5Name" : "自动化测试站点名称",
+    "h5SiteUrl" : "",
+    "h5LogoUrl" : "T1iRZTByhT1RCvBVdK",
+    "h5IconUrl" : "123",
+    "pcSiteUrl" : "123"
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_27_新手教程设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/copyright?type=1&code=BT01 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取网站说明文案-resp】{
+  "data" : [ {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : 91,
+    "createTime" : 1513046012513,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694395,
+    "cid" : 66,
+    "platId" : 38,
+    "code" : "BT01",
+    "clientTitle" : "新手教程",
+    "title" : "自动化测试",
+    "content" : "自动化测试",
+    "type" : 1,
+    "client" : 1,
+    "status" : 1,
+    "modifyUsername" : "victor"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_28_代理加盟设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/copyright?type=1&code=BT02 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取网站说明文案-resp】{
+  "data" : [ {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : 91,
+    "createTime" : 1513046012525,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694456,
+    "cid" : 67,
+    "platId" : 38,
+    "code" : "BT02",
+    "clientTitle" : "代理加盟",
+    "title" : "自动化测试",
+    "content" : "自动化测试",
+    "type" : 1,
+    "client" : 1,
+    "status" : 1,
+    "modifyUsername" : "victor"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_29_关于我们设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/copyright?type=1&code=BT04 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取网站说明文案-resp】{
+  "data" : [ {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : 91,
+    "createTime" : 1513046012584,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694538,
+    "cid" : 69,
+    "platId" : 38,
+    "code" : "BT04",
+    "clientTitle" : "关于我们",
+    "title" : "自动化测试",
+    "content" : "自动化测试",
+    "type" : 1,
+    "client" : 1,
+    "status" : 1,
+    "modifyUsername" : "victor"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_30_充值教程设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/copyright?type=1&code=BT05 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取网站说明文案-resp】{
+  "data" : [ {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : 91,
+    "createTime" : 1513046012584,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694606,
+    "cid" : 100,
+    "platId" : 38,
+    "code" : "BT05",
+    "clientTitle" : "充值教程",
+    "title" : "自动化测试",
+    "content" : "自动化测试",
+    "type" : 1,
+    "client" : 1,
+    "status" : 1,
+    "modifyUsername" : "victor"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_31_注册说明设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/copyright?type=2&code=ZT03 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取网站说明文案-resp】{
+  "data" : [ {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : -1,
+    "createTime" : 0,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694685,
+    "cid" : 144,
+    "platId" : 38,
+    "code" : "ZT03",
+    "clientTitle" : "注册说明",
+    "title" : "自动化测试",
+    "content" : "自动化测试",
+    "type" : 2,
+    "client" : 1,
+    "status" : 1,
+    "modifyUsername" : "victor"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_32_存款弹窗设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/copyright?type=3&code=AT01 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取网站说明文案-resp】{
+  "data" : [ {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : 91,
+    "createTime" : 1513046013930,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694735,
+    "cid" : 70,
+    "platId" : 38,
+    "code" : "AT01",
+    "clientTitle" : "存款弹窗",
+    "title" : "自动化测试",
+    "content" : "自动化测试",
+    "type" : 3,
+    "client" : 1,
+    "status" : 1,
+    "modifyUsername" : "victor"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_33_支付宝钱包设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/copyright?type=3&code=AT02 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取网站说明文案-resp】{
+  "data" : [ {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : -1,
+    "createTime" : 0,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694877,
+    "cid" : 133,
+    "platId" : 38,
+    "code" : "AT02",
+    "clientTitle" : "支付宝钱包",
+    "title" : "自动化测试",
+    "content" : "自动化测试",
+    "type" : 3,
+    "client" : 1,
+    "status" : 1,
+    "modifyUsername" : "victor"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_34_微信钱包设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/copyright?type=3&code=AT03 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取网站说明文案-resp】{
+  "data" : [ {
+    "version" : 0,
+    "ifDel" : 0,
+    "createUser" : -1,
+    "createTime" : 0,
+    "modifyUser" : 2295,
+    "modifyTime" : 1524464694929,
+    "cid" : 134,
+    "platId" : 38,
+    "code" : "AT03",
+    "clientTitle" : "微信钱包",
+    "title" : "自动化测试",
+    "content" : "自动化测试",
+    "type" : 3,
+    "client" : 1,
+    "status" : 1,
+    "modifyUsername" : "victor"
+  } ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_35_优惠活动列表设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/activityInfo HTTP/1.1" 500 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取优惠活动信息-resp】{
+  "err" : "error.internalServerError",
+  "msg" : "Internal server error:Required Long parameter 'cid' is not present",
+  "fieldErrors" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_36_轮播图设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/carousel HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取轮播图-resp】{
+  "data" : null,
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_37_公告设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/notices HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取公告-resp】{
+  "data" : [ ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_38_首页弹屏验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/popText HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取首页弹屏-resp】{
+  "data" : [ ],
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO TestCase---------------test_39_站内信设定验证
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:208] DEBUG Starting new HTTP connection (1): 121.58.234.210
+Tue, 24 Apr 2018 11:49:01 connectionpool.py[line:396] DEBUG http://121.58.234.210:19093 "GET /forseti/apid/cms/msg/list?sourceType=2&page=1&rows=5 HTTP/1.1" 200 None
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:48] DEBUG 【获取站内信-resp】{
+  "data" : {
+    "data" : {
+      "totalSize" : 67,
+      "pageSize" : 5,
+      "totalPage" : 14,
+      "currentPage" : 1,
+      "rows" : [ {
+        "version" : 0,
+        "createTime" : 1524049918071,
+        "title" : "autotest",
+        "content" : "测试数据test data！！",
+        "type" : 1
+      }, {
+        "version" : 0,
+        "createTime" : 1524047386100,
+        "title" : "autotest",
+        "content" : "测试数据test data！！",
+        "type" : 1
+      }, {
+        "version" : 0,
+        "createTime" : 1524047340530,
+        "title" : "autotest",
+        "content" : "测试数据test data！！",
+        "type" : 1
+      }, {
+        "version" : 0,
+        "createTime" : 1524047092686,
+        "title" : "autotest",
+        "content" : "测试数据test data！！",
+        "type" : 1
+      }, {
+        "version" : 0,
+        "createTime" : 1524037994006,
+        "title" : "autotest",
+        "content" : "测试数据test data！！",
+        "type" : 1
+      } ],
+      "total" : 67,
+      "pageLimit" : 5,
+      "pageBegin" : 0,
+      "pageEnd" : 5
+    },
+    "err" : "SUCCESS",
+    "msg" : "",
+    "maxUpdateTime" : null
+  },
+  "err" : "SUCCESS",
+  "msg" : "",
+  "maxUpdateTime" : null
+}
+Tue, 24 Apr 2018 11:49:01 pylog.py[line:44] INFO ***************结束执行用例（CmsProcess）***************

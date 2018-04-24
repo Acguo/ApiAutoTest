@@ -1,0 +1,17 @@
+{
+  "memberName": null,
+  "orderId": null,
+  "condition": {
+    "sideType": "2",
+    "page": 1,
+    "count": 600,
+    "betStartTime": null,
+    "betEndTime": null,
+    "memberName": "",
+    "orderId": "",
+    "status": "",
+    "lotteryId":"",
+    "playId": "",
+    "agent": ""
+  }
+}

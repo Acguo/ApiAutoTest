@@ -1,0 +1,70 @@
+{
+  "title": "auto出入款方案vct",
+  "dispFee": 1000,
+  "dispFeeLimit": 10000,
+  "dispCapped": 1000000,
+  "dispLower": 500,
+  "freeCount": 1,
+  "repeatFeeCount": 12,
+  "dailyAmountLimit": 100000,
+  "itemPO": [
+    {
+      "depositType": 1,
+      "ifFirst": 1,
+      "ifNormalAudit": 1,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 500,
+      "preferentialStandards": 1000,
+      "discountPercentage": 500,
+      "maxDepositAmount": 5000000,
+      "minDepositAmount": 500,
+      "discountAudit": 5
+    },
+    {
+      "depositType": 1,
+      "ifFirst": 0,
+      "ifNormalAudit": 1,
+      "preferentialStandards": 1000,
+      "discountPercentage": 600,
+      "maxDepositAmount": 6000000,
+      "minDepositAmount": 600,
+      "discountAudit": 6,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 600
+    },
+    {
+      "depositType": 2,
+      "ifFirst": 1,
+      "ifNormalAudit": 1,
+      "preferentialStandards": 1000,
+      "discountPercentage": 700,
+      "maxDepositAmount": 7000000,
+      "minDepositAmount": 700,
+      "discountAudit": 7,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 700
+    },
+    {
+      "depositType": 2,
+      "ifFirst": 0,
+      "ifNormalAudit": 1,
+      "preferentialStandards": 1000,
+      "discountPercentage": 800,
+      "maxDepositAmount": 8000000,
+      "minDepositAmount": 800,
+      "discountAudit": 8,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 800
+    },
+    {
+      "depositType": 3,
+      "ifFirst": 0,
+      "preferentialStandards": 1000,
+      "discountPercentage": 1000,
+      "maxDepositAmount": 1000000,
+      "minDepositAmount": 10000,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 1000
+    }
+  ]
+}

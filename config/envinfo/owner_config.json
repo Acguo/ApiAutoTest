@@ -1,0 +1,79 @@
+{
+  "env": "pt2",
+  "blc888": {
+    "host_yz": "api.baochi888.com",
+    "host_mb": "api.baochi888.com",
+    "host_ct": "api.baochi888.com",
+    "origin_yz": "http://blcpt.baochi888.com",
+    "origin_mb": "http://blc.baochi888.com",
+    "origin_ct": "http://cp.baochi888.com",
+    "user_ct": "victor",
+    "pwd_ct": "victor",
+    "user_yz": "victor",
+    "pwd_yz": "123456",
+    "user_mb": "vctscript",
+    "pwd_mb": "123456",
+    "platId": 120
+  },
+  "hkjc888": {
+    "host_yz": "api.baochi888.com",
+    "host_mb": "api.baochi888.com",
+    "host_ct": "api.baochi888.com",
+    "origin_yz": "http://hkjcpt.baochi888.com",
+    "origin_mb": "http://hkjc.baochi888.com",
+    "origin_ct": "http://cp.baochi888.com",
+    "user_ct": "victor",
+    "pwd_ct": "victor",
+    "user_yz": "victor",
+    "pwd_yz": "123456",
+    "user_mb": "vctscript",
+    "pwd_mb": "123456",
+    "platId": 126
+  },
+  "pt2": {
+    "host_yz": "121.58.234.210:19093",
+    "host_mb": "121.58.234.210:19093",
+    "host_ct": "121.58.234.210:19093",
+    "origin_yz": "http://pt2.bccp.co",
+    "origin_mb": "http://cp2.bccp.co",
+    "origin_ct": "http://www.bccp.co",
+    "user_ct": "victor",
+    "pwd_ct": "victor",
+    "user_yz": "victor",
+    "pwd_yz": "123456",
+    "user_mb": "vctscript",
+    "pwd_mb": "123456",
+    "platId": 38
+  },
+  "hkjc": {
+    "host_yz": "121.58.234.210:19093",
+    "host_mb": "121.58.234.210:19093",
+    "host_ct": "121.58.234.210:19093",
+    "origin_yz": "http://hkjcpt.bccp.co",
+    "origin_mb": "http://hkjc.bccp.co",
+    "origin_ct": "http://www.bccp.co",
+    "user_ct": "victor",
+    "pwd_ct": "victor",
+    "user_yz": "victor",
+    "pwd_yz": "123456",
+    "user_mb": "vctscript",
+    "pwd_mb": "123456",
+    "platId": 72
+  },
+  "cs": {
+    "host_yz": "api.88bccp.com",
+    "host_mb": "api.88bccp.com",
+    "origin_yz": "http://cspt.88bccp.com",
+    "origin_mb": "http://cs.88bccp.com",
+    "user_yz": "victor",
+    "pwd_yz": "123456",
+    "user_mb": "vctscript",
+    "pwd_mb": "123456"
+  },
+  "control": {
+    "host": "121.58.234.210:19093",
+    "origin": "http://www.bccp.co",
+    "user": "victor",
+    "pwd": "123456"
+  }
+}

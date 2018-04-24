@@ -1,0 +1,83 @@
+{
+  "cid": 421,
+  "title": "默认优惠方案",
+  "dispFee": 1000,
+  "dispFeeLimit": 10000,
+  "dispCapped": 1000000,
+  "dispLower": 500,
+  "freeCount": 1,
+  "repeatFeeCount": 12,
+  "dailyAmountLimit": 100000,
+  "itemPO": [
+    {
+      "cid": 522,
+      "accessDiscountId": 421,
+      "depositType": 1,
+      "ifFirst": 1,
+      "preferentialStandards": 1000,
+      "discountPercentage": 500,
+      "maxDepositAmount": 5000000,
+      "minDepositAmount": 500,
+      "discountAudit": 1,
+      "ifNormalAudit": 1,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 500
+    },
+    {
+      "cid": 521,
+      "accessDiscountId": 421,
+      "depositType": 1,
+      "ifFirst": 0,
+      "preferentialStandards": 2000,
+      "discountPercentage": 600,
+      "maxDepositAmount": 6000000,
+      "minDepositAmount": 600,
+      "discountAudit": 1,
+      "ifNormalAudit": 1,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 600
+    },
+    {
+      "cid": 524,
+      "accessDiscountId": 421,
+      "depositType": 2,
+      "ifFirst": 1,
+      "preferentialStandards": 1000,
+      "discountPercentage": 700,
+      "maxDepositAmount": 7000000,
+      "minDepositAmount": 700,
+      "discountAudit": 1,
+      "ifNormalAudit": 1,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 700
+    },
+    {
+      "cid": 523,
+      "accessDiscountId": 421,
+      "depositType": 2,
+      "ifFirst": 0,
+      "preferentialStandards": 200,
+      "discountPercentage": 800,
+      "maxDepositAmount": 8000000,
+      "minDepositAmount": 800,
+      "discountAudit": 1,
+      "ifNormalAudit": 1,
+      "normalAuditQuota": 1000,
+      "normalAuditRate": 800
+    },
+    {
+      "cid": 525,
+      "accessDiscountId": 421,
+      "depositType": 3,
+      "ifFirst": 0,
+      "preferentialStandards": 1000,
+      "discountPercentage": 1000,
+      "maxDepositAmount": 100000000,
+      "minDepositAmount": 1000,
+      "discountAudit": 0,
+      "ifNormalAudit": 0,
+      "normalAuditQuota": 100,
+      "normalAuditRate": 1000
+    }
+  ]
+}
